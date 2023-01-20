@@ -11,9 +11,8 @@ namespace UserRegistration
         public static void ForFirstName()
         {
             Console.WriteLine("Rule for First Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
-            Console.WriteLine("\nEnter first name");
+            Console.WriteLine("\nEnter First Name : ");
             string Nm = Console.ReadLine();
-
             User UR = new User();
             UR.firstName(Nm);
         }
@@ -25,6 +24,15 @@ namespace UserRegistration
 
             User UR = new User();
             UR.LastName(Lm);
+        }
+        public static void Foremail()
+        {
+
+            Console.WriteLine("\nEnter Email : ");
+            string Em = Console.ReadLine();
+
+            User UR = new User();
+            UR.email(Em);
         }
     }
 }
