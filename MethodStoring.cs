@@ -34,5 +34,14 @@ namespace UserRegistration
             User UR = new User();
             UR.email(Em);
         }
+        public static void ForNumber()
+        {
+            Console.WriteLine("\nRule for Number:-\n1)entry code of 2 digit.\n2)give space after entry code\n3)only 10 integer allowed in mobile number.");
+            Console.WriteLine("\nEnter Mobilr number with country code : ");
+            string Mb = Console.ReadLine();
+
+            User UR = new User();
+            UR.mobile(Mb);
+        }
     }
 }
