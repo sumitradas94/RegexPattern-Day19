@@ -9,7 +9,7 @@
             
             MethodStoring.ForLatName();
 
-
+            MethodStoring.Foremail();
         }
 
     }
