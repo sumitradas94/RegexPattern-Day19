@@ -9,11 +9,12 @@ namespace UserRegistration
 {
     public class User
     {
-        bool a, b, c, d;
+        bool a, b, c, d, e;
         public static string Firstname = "^[A-Z]{1}[a-z]{2}$";
         public static string Lastname = "^[A-Z]{1}[a-z]{2}$";
         public static string Email = "^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*";
         public static string Mob = "^[1-9]{2}[: :][0-9]{10}$";
+        public static string Pass = "^[a-zA-Z0-9]{8,}";
         public void firstName(string Nm)
         {
             a = Regex.IsMatch(Nm, Firstname);
@@ -66,6 +67,20 @@ namespace UserRegistration
                 Console.WriteLine("{0} is not a valid Mobile number.", Mb);
             }
         }
+        public void PassWord(string Pw)
+        {
+            e = Regex.IsMatch(Pw, Pass);
+
+            if (e)
+            {
+                Console.WriteLine("{0} is a valid password.", Pw);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not a valid Password.", Pw);
+            }
+        }
+
 
     }
 }
