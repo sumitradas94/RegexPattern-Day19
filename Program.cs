@@ -10,6 +10,7 @@
             MethodStoring.ForLatName();
 
             MethodStoring.Foremail();
+            MethodStoring.ForNumber();
         }
 
     }
