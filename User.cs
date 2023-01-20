@@ -9,11 +9,13 @@ namespace UserRegistration
 {
     public class User
     {
+        bool a, b;
         public static string Firstname = "^[A-Z]{1}[a-z]{2}$";
+        public static string Lastname = "^[A-Z]{1}[a-z]{2}$";
 
         public void firstName(string Nm)
         {
-            bool a = Regex.IsMatch(Nm, Firstname);
+            a = Regex.IsMatch(Nm, Firstname);
 
             if (a)
             {
@@ -22,9 +24,19 @@ namespace UserRegistration
             else
             {
                 Console.WriteLine("{0} is not a valid name.", Nm);
+            }
+        }
+        public void LastName(string Lm)
+        {
+            b = Regex.IsMatch(Lm, Firstname);
 
-
-
+            if (b)
+            {
+                Console.WriteLine("{0} is a valid name.", Lm);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not a valid name.", Lm);
             }
         }
     }
