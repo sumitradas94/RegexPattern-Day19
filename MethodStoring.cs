@@ -17,5 +17,14 @@ namespace UserRegistration
             User UR = new User();
             UR.firstName(Nm);
         }
+        public static void ForLatName()
+        {
+            Console.WriteLine("\nRule for Last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
+            Console.WriteLine("\nEnter Last Name : ");
+            string Lm = Console.ReadLine();
+
+            User UR = new User();
+            UR.LastName(Lm);
+        }
     }
 }
