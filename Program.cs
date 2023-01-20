@@ -11,6 +11,7 @@
 
             MethodStoring.Foremail();
             MethodStoring.ForNumber();
+            MethodStoring.ForPassword();
         }
 
     }
