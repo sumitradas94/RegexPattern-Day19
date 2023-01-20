@@ -6,6 +6,8 @@
         {
             Console.WriteLine("Welcome to the User Regestration Program by Regex");
             MethodStoring.ForFirstName();
+            
+            MethodStoring.ForLatName();
 
 
         }
